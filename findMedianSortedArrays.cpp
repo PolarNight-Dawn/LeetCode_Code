@@ -8,7 +8,7 @@ using namespace std;
 
 class Solution {
 public:
-    int getKthElement(const vector<int>& nums1, const vector<int>& nums2, int k) {
+    int getKthElement(const vector<int> &nums1, const vector<int> &nums2, int k) {
         int m = nums1.size();
         int n = nums2.size();
         int index1 = 0, index2 = 0;
@@ -33,31 +33,30 @@ public:
             if (pivot1 <= pivot2) {
                 k -= newIndex1 - index1 + 1;
                 index1 = newIndex1 + 1;
-            }
-            else {
+            } else {
                 k -= newIndex2 - index2 + 1;
                 index2 = newIndex2 + 1;
             }
         }
     }
 
-    double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
+    double findMedianSortedArrays(vector<int> &nums1, vector<int> &nums2) {
         int totalLength = nums1.size() + nums2.size();
         if (totalLength % 2 == 1) {
             return getKthElement(nums1, nums2, (totalLength + 1) / 2);
-        }
-        else {
-            return (getKthElement(nums1, nums2, totalLength / 2) + getKthElement(nums1, nums2, totalLength / 2 + 1)) / 2.0;
+        } else {
+            return (getKthElement(nums1, nums2, totalLength / 2) + getKthElement(nums1, nums2, totalLength / 2 + 1)) /
+                   2.0;
         }
     }
 };
 
-int main () {
-    vector<int> nums1 = {1,2};
-    vector<int> nums2 = {3,4};
+int main04() {
+    vector<int> nums1 = {1, 2};
+    vector<int> nums2 = {3, 4};
 
     Solution sol;
-    cout << sol.findMedianSortedArrays(nums1,nums2);
+    cout << sol.findMedianSortedArrays(nums1, nums2);
 
     return 0;
 }
