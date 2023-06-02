@@ -31,7 +31,7 @@ public:
     }
 };
 
-int main() {
+int main06() {
     string s = "ABCDEF";
     int numRows = 2;
 
