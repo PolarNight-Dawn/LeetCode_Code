@@ -41,7 +41,7 @@ public:
 };
 
 
-int main () {
+int main05() {
     string s = "abba";
 
     Solution sol;
