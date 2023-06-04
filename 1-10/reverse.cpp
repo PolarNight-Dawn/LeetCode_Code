@@ -6,7 +6,6 @@ using namespace std;
 //
 // Created by polarnight on 23-4-14.
 //
-
 class Solution {
 public:
     int reverse(int x) {
@@ -26,7 +25,7 @@ public:
     }
 };
 
-int main() {
+int main07() {
     int x = 1534236469;
 
     Solution sol;
