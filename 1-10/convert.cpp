@@ -23,7 +23,7 @@ public:
         }
 
         string str;
-        for (auto &ans : vec) {
+        for (auto &ans: vec) {
             str += ans;
         }
 

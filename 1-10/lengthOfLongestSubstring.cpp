@@ -2,6 +2,7 @@
 #include <unordered_map>
 
 using namespace std;
+
 //
 // Created by polarnight on 23-4-11.
 //
@@ -26,8 +27,7 @@ public:
 };
 
 
-
-int main03 () {
+int main03() {
     Solution sol;
     string s = "abcdeafghia";
     cout << sol.lengthOfLongestSubstring(s);

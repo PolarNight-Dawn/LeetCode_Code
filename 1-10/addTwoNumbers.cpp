@@ -13,8 +13,8 @@ struct ListNode {
 
 class Solution {
 public:
-    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
-        ListNode* l3 = nullptr;
+    ListNode *addTwoNumbers(ListNode *l1, ListNode *l2) {
+        ListNode *l3 = nullptr;
         int carry = 0, val = 0;
 
         while (l1 || l2) {
@@ -25,7 +25,7 @@ public:
             val = sum % 10;
             carry = sum / 10;
 
-            ListNode* cur = new ListNode(val);
+            ListNode *cur = new ListNode(val);
             cur->next = l3;
             l3 = cur;
 
@@ -34,20 +34,20 @@ public:
         }
 
         if (carry != 0) {
-            ListNode* cur = new ListNode(carry);
+            ListNode *cur = new ListNode(carry);
             cur->next = l3;
             l3 = cur;
         }
 
         // 貌似是针对两个链表全部为空时的处理，首先处理并不完善，没有考虑其中一个为0的情况，其次链表的构造函数限制了链表为空
         if (l3 == nullptr) {
-            ListNode* cur = new ListNode(0);
+            ListNode *cur = new ListNode(0);
         }
 
-        ListNode* prev = nullptr;
-        ListNode* curr = l3;
+        ListNode *prev = nullptr;
+        ListNode *curr = l3;
         while (curr != nullptr) {
-            ListNode* next = curr->next;
+            ListNode *next = curr->next;
             curr->next = prev;
             prev = curr;
             curr = next;

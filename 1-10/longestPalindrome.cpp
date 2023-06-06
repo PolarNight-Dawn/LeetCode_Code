@@ -17,13 +17,13 @@ public:
         int start = 0, maxLen = 1;
         vector<vector<bool>> dp(n, vector<bool>(n, false));
 
-        for (int i = n-1; i >= 0; i--) {
+        for (int i = n - 1; i >= 0; i--) {
             for (int j = i; j < n; j++) {
                 if (s[i] == s[j]) {
                     if (j - i < 2) {
                         dp[i][j] = true;
                     } else {
-                        dp[i][j] = dp[i+1][j-1];
+                        dp[i][j] = dp[i + 1][j - 1];
                     }
                 } else {
                     dp[i][j] = false;

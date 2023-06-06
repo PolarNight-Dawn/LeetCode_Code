@@ -1,6 +1,7 @@
 #include <iostream>
 
 using namespace std;
+
 //
 // Created by polarnight on 23-4-15.
 //
@@ -21,9 +22,9 @@ public:
             ++i;
         }
 
-        s = s.substr(i) ;
+        s = s.substr(i);
         int64_t result = 0;
-        for (char c : s) {
+        for (char c: s) {
             if (c >= '0' && c <= '9') {
                 result = result * 10 + (c - '0');
                 if (result > 2147483648) {
@@ -45,7 +46,7 @@ public:
     }
 };
 
-int main08 () {
+int main08() {
     string s = "  -42 with code";
 
     Solution sol;
