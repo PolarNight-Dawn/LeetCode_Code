@@ -35,7 +35,7 @@ public:
     }
 };
 
-int main() {
+int main12() {
     int num = 1994;
 
     Solution sol;
