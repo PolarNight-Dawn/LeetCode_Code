@@ -30,7 +30,7 @@ public:
     }
 };
 
-int main() {
+int main14() {
     vector<string> strs = {"flower","flow","flight"};
 
     Solution sol;
