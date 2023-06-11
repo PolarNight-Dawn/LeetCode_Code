@@ -2,7 +2,6 @@
 #include <vector>
 #include <algorithm>
 
-
 using namespace std;
 //
 // Created by polarnight on 23-5-5.
