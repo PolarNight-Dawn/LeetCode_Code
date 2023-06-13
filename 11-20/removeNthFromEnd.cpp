@@ -19,35 +19,35 @@ struct ListNode {
 class Solution {
 public:
     ListNode *removeNthFromEnd(ListNode *head, int n) {
-        ListNode *p = head;
+        ListNode* cur = head;
         int len = 0;
 
-        while (p != nullptr) {
+        while (cur != nullptr) {
             len++;
-            p = p->next;
+            cur = cur->next;
         }
 
         if (n > len) {
             return head;
         } else if (n == len) {
-            ListNode *cur = head;
+            ListNode* curr = head;
             head = head->next;
-            cur->next = nullptr;
+            curr->next = nullptr;
             return head;
         } else {
-            ListNode *cur = head;
+            ListNode* curr = head;
             int i = len - n;
             while (i > 1) {
-                cur = cur->next;
+                curr = curr->next;
                 i--;
             }
-            cur->next = cur->next->next;
+            curr->next = curr->next->next;
         }
         return head;
     }
 };
 
-int main19() {
+int main() {
     ListNode *head = new ListNode(1);
     head->next = new ListNode(2);
     head->next->next = new ListNode(3);

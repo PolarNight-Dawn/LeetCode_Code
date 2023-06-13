@@ -49,7 +49,7 @@ public:
     }
 };
 
-int main() {
+int main17() {
     string digits = "23";
 
     Solution sol;
