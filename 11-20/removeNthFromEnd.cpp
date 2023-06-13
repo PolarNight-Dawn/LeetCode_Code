@@ -19,30 +19,23 @@ struct ListNode {
 class Solution {
 public:
     ListNode *removeNthFromEnd(ListNode *head, int n) {
-        ListNode* cur = head;
-        int len = 0;
+        ListNode* fast = head;
+        ListNode* slow = head;
 
-        while (cur != nullptr) {
-            len++;
-            cur = cur->next;
-        }
-
-        if (n > len) {
-            return head;
-        } else if (n == len) {
-            ListNode* curr = head;
-            head = head->next;
-            curr->next = nullptr;
-            return head;
-        } else {
-            ListNode* curr = head;
-            int i = len - n;
-            while (i > 1) {
-                curr = curr->next;
-                i--;
+        while (n >= 0) {
+            if (fast == nullptr) {
+                return head->next;
             }
-            curr->next = curr->next->next;
+            fast = fast->next;
+            n--;
         }
+
+        while (fast != nullptr) {
+            fast = fast->next;
+            slow = slow->next;
+        }
+        slow->next = slow->next->next;
+
         return head;
     }
 };
@@ -53,7 +46,7 @@ int main() {
     head->next->next = new ListNode(3);
     head->next->next->next = new ListNode(4);
     head->next->next->next->next = new ListNode(5);
-    int n = 2;
+    int n = 5;
 
     Solution sol;
     ListNode* res = sol.removeNthFromEnd(head, n);
