@@ -11,25 +11,25 @@ class Solution {
 public:
     bool isValid(string s) {
         unordered_map<char, char> map = {{'}', '{'},
-                                         {']', '['},
-                                         {')', '('}};
+                                         {')', '('},
+                                         {']', '['}};
         stack<char> sta;
 
-        for(char ch : s) {
-            if (map.count(ch)) {
-                if (sta.empty() || sta.top() != map[ch]) {
+        for (auto &c: s) {
+            if (map.count(c)) {
+                if (sta.empty() || sta.top() != map[c]) {
                     return false;
                 }
                 sta.pop();
             } else {
-                sta.push(ch);
+                sta.push(c);
             }
         }
         return sta.empty();
     }
 };
 
-int main20() {
+int main() {
     string s = "(}";
 
     Solution sol;

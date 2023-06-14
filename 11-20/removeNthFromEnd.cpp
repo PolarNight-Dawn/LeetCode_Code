@@ -40,7 +40,7 @@ public:
     }
 };
 
-int main() {
+int main19() {
     ListNode *head = new ListNode(1);
     head->next = new ListNode(2);
     head->next->next = new ListNode(3);
