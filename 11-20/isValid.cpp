@@ -29,7 +29,7 @@ public:
     }
 };
 
-int main() {
+int main20() {
     string s = "(}";
 
     Solution sol;

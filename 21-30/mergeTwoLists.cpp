@@ -21,40 +21,24 @@ struct ListNode {
 class Solution {
 public:
     ListNode *mergeTwoLists(ListNode *list1, ListNode *list2) {
-        vector<int> vec;
-        ListNode *a = list1;
-        ListNode *b = list2;
+        ListNode *l1 = list1;
+        ListNode *l2 = list2;
 
-        while (a != nullptr) {
-            vec.push_back(a->val);
-            a = a->next;
+        if (l1 == nullptr) {
+            return l2;
+        } else if (l2 == nullptr) {
+            return l1;
+        } else if (l1->val <= l2->val) {
+            l1->next = mergeTwoLists(l1->next, l2);
+            return l1;
+        } else {
+            l2->next = mergeTwoLists(l1, l2->next);
+            return l2;
         }
-
-        while (b != nullptr) {
-            vec.push_back(b->val);
-            b = b->next;
-        }
-
-        sort(vec.begin(), vec.end());
-
-        ListNode *res = nullptr;
-        ListNode* c = nullptr;
-
-        for (int n : vec) {
-            if (res == nullptr) {
-                res = new ListNode(n);
-                c = res;
-            } else {
-                c->next = new ListNode(n);
-                c = c->next;
-            }
-        }
-
-        return res;
     }
 };
 
-int main21() {
+int main() {
     ListNode *list1 = new ListNode(1);
     list1->next = new ListNode(2);
     list1->next->next = new ListNode(4);
