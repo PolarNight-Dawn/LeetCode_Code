@@ -38,7 +38,7 @@ public:
     }
 };
 
-int main() {
+int main21() {
     ListNode *list1 = new ListNode(1);
     list1->next = new ListNode(2);
     list1->next->next = new ListNode(4);
