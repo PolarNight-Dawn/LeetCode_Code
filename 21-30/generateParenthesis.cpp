@@ -35,7 +35,7 @@ public:
     }
 };
 
-int main() {
+int main22() {
     int n = 3;
 
     Solution sol;
