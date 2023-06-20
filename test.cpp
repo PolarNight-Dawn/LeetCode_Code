@@ -1,5 +1,7 @@
 #include <iostream>
 #include <unordered_map>
+#include <vector>
+#include <algorithm>
 
 using namespace std;
 //
@@ -7,8 +9,14 @@ using namespace std;
 //
 
 int main00() {
-    char a = 'c';
-    cout << " " << sizeof(a) << endl;
+    vector<char> vec = {'a', 'b', 'b'};
+
+    vec.erase(remove(vec.begin(), vec.end(), 'b'), vec.end());
+
+    for (auto &temp : vec) {
+        cout << temp << " ";
+    }
+    cout << endl;
 
     return 0;
 }

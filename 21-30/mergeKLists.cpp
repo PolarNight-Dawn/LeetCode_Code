@@ -74,7 +74,7 @@ void printLinkedList(ListNode *head) {
     std::cout << "nullptr" << std::endl;
 }
 
-int main() {
+int main23() {
     Solution solution;
 
     // 创建链表数组
