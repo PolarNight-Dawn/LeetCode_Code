@@ -53,7 +53,7 @@ public:
     }
 };
 
-int main() {
+int main25() {
     ListNode *head = new ListNode(1);
     head->next = new ListNode(2);
     head->next->next = new ListNode(3);
