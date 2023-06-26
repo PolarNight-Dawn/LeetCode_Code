@@ -34,7 +34,7 @@ public:
     }
 };
 
-int main() {
+int main28() {
     std::string haystack = "mississippi";
     std::string needle = "issip";
 
