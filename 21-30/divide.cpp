@@ -46,7 +46,7 @@ public:
     }
 };
 
-int main() {
+int main29() {
     int dividend = -2147483648;
     int divisor = -1;
 
