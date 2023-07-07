@@ -73,7 +73,7 @@ public:
     }
 };
 
-int main() {
+int main30() {
     std::string s = "aaaaaaaaaaaaaa";
     std::vector<std::string> words = {"aa", "aa"};
     std::vector<int> res;
