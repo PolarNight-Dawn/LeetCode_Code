@@ -8,7 +8,7 @@ using namespace std;
 // Created by polarnight on 23-4-14.
 //
 
-int main() {
+int main00() {
 /*    vector<char> vec = {'a', 'b', 'b'};
 
     vec.erase(remove(vec.begin(), vec.end(), 'b'), vec.end());
