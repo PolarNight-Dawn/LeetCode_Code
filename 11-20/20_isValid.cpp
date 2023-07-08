@@ -30,7 +30,7 @@ public:
 };
 
 int main20() {
-    string s = "(}";
+    string s = "(())";
 
     Solution sol;
     cout << sol.isValid(s);
