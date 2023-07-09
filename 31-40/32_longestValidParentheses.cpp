@@ -35,7 +35,7 @@ public:
     }
 };
 
-int main() {
+int main32() {
     std::string s = "()(()";
 
     Solution sol;
