@@ -32,7 +32,7 @@ public:
     }
 };
 
-int main() {
+int main34() {
     std::vector<int> nums = {5, 7, 7, 8, 8, 10};
     std::vector<int> res;
 
