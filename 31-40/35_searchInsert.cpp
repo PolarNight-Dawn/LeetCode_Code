@@ -23,7 +23,7 @@ public:
     }
 };
 
-int main() {
+int main35() {
     std::vector<int> nums = {1, 3, 5, 6};
 
     Solution sol;
