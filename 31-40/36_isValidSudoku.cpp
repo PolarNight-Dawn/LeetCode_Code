@@ -1,7 +1,5 @@
 #include <iostream>
 #include <vector>
-#include <unordered_map>
-#include <unordered_set>
 
 //
 // Created by polarnight on 23-7-12.
@@ -30,7 +28,7 @@ public:
     }
 };
 
-int main() {
+int main36() {
     std::vector<std::vector<char>> board = {{'8', '3', '.', '.', '7', '.', '.', '.', '.'},
                                             {'6', '.', '.', '1', '9', '5', '.', '.', '.'},
                                             {'.', '9', '8', '.', '.', '.', '.', '6', '.'},
