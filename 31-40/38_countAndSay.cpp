@@ -29,7 +29,7 @@ public:
                     res += str[i];
                     break;
                 }
-                return dfs(res, str, i + 1, 1);
+                return recurs(res, str, i + 1, 1);
             }
         }
         return res;
