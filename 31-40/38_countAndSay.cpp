@@ -51,7 +51,7 @@ public:
     }
 };
 
-int main() {
+int main38() {
     int n = 5;
 
     Solution sol;
