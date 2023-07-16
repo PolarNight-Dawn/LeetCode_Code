@@ -36,7 +36,7 @@ public:
     }
 };
 
-int main() {
+int main39() {
     std::vector<int> candidates = {2,3,6,7};
     int target = 7;
 
