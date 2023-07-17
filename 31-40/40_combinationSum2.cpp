@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector>
-#include <unordered_set>
 #include <algorithm>
 
 //
@@ -42,7 +41,7 @@ public:
     }
 };
 
-int main() {
+int main40() {
     std::vector<int> candidates = {10, 1, 2, 7, 6, 1, 5};
     int target = 8;
 
