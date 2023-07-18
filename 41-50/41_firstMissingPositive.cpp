@@ -25,7 +25,7 @@ public:
     }
 };
 
-int main() {
+int main41() {
     std::vector<int> nums = {1};
 
     Solution sol;
