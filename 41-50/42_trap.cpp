@@ -29,7 +29,7 @@ public:
     }
 };
 
-int main() {
+int main42() {
     std::vector<int> height = {4, 2, 3};
 
     Solution sol;
