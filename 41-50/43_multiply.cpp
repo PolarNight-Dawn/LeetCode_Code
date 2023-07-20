@@ -40,7 +40,7 @@ public:
     }
 };
 
-int main() {
+int main43() {
     std::string num1 = "2";
     std::string num2 = "0";
 
