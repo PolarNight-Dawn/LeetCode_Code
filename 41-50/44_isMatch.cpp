@@ -32,7 +32,7 @@ public:
     }
 };
 
-int main() {
+int main44() {
     std::string s = "adceb";
     std::string p = "*a*b";
 
