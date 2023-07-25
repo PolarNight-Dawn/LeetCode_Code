@@ -39,7 +39,7 @@ public:
     }
 };
 
-int main() {
+int main48() {
     std::vector<std::vector<int>> matrix = {{5,  1,  9,  11},
                                             {2,  4,  8,  10},
                                             {13, 3,  6,  7},
