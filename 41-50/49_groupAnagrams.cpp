@@ -2,6 +2,7 @@
 #include <vector>
 #include <algorithm>
 #include <unordered_map>
+#include <cmath>
 
 //
 // Created by polarnight on 23-7-25.
@@ -33,7 +34,7 @@ public:
     }
 };
 
-int main() {
+int main49() {
     std::vector<std::string> strs = {"ddddddddddg","dgggggggggg"};
     std::vector<std::vector<std::string>> res;
 
