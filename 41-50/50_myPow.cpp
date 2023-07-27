@@ -24,7 +24,7 @@ public:
     }
 };
 
-int main() {
+int main50() {
     double x = 2.0;
     int n = 10;
 
