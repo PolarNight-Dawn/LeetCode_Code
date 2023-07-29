@@ -48,7 +48,7 @@ public:
     }
 };
 
-int main() {
+int main52() {
     int n = 4;
 
     Solution sol;
