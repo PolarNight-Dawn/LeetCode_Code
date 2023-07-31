@@ -38,7 +38,7 @@ public:
     }
 };
 
-int main() {
+int main54() {
     std::vector<std::vector<int>> matrix = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
     std::vector<int> res;
 
