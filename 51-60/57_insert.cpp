@@ -8,10 +8,10 @@
 
 class Solution {
 public:
-    std::vector<std::vector<int>> merge(std::vector<std::vector<int>>& intervals) {
+    std::vector<std::vector<int>> insert(std::vector<std::vector<int>>& intervals, std::vector<int>& newInterval) {
         std::vector<std::vector<int>> res;
 
-        if (intervals.size() == 0) return res;
+        intervals.push_back(newInterval);
         sort(intervals.begin(), intervals.end(), [](const std::vector<int> &a, const std::vector<int> &b){return a[0] < b[0];});
         res.push_back(intervals[0]);
 
@@ -24,12 +24,13 @@ public:
     }
 };
 
-int main56() {
+int main() {
     std::vector<std::vector<int>> intervals = {{1, 4}, {0, 2}, {3, 5}};
+    std::vector<int> newInterval = {2, 3};
     std::vector<std::vector<int>> res;
 
     Solution sol;
-    res = sol.merge(intervals);
+    res = sol.merge(intervals, newInterval);
 
     for (auto &vec :res) {
         for (auto &tmp : vec) {
