@@ -21,7 +21,7 @@ public:
     }
 };
 
-int main() {
+int main58() {
     std::string s = "luffy is still joyboy";
 
     Solution sol;
