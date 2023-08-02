@@ -24,13 +24,13 @@ public:
     }
 };
 
-int main() {
+int main57() {
     std::vector<std::vector<int>> intervals = {{1, 4}, {0, 2}, {3, 5}};
     std::vector<int> newInterval = {2, 3};
     std::vector<std::vector<int>> res;
 
     Solution sol;
-    res = sol.merge(intervals, newInterval);
+    res = sol.insert(intervals, newInterval);
 
     for (auto &vec :res) {
         for (auto &tmp : vec) {
