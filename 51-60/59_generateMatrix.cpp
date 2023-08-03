@@ -42,7 +42,7 @@ public:
     }
 };
 
-int main() {
+int main59() {
     std::vector<std::vector<int>> res;
     int n = 3;
 
