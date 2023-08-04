@@ -49,7 +49,7 @@ public:
     }
 };
 
-int main() {
+int main60() {
     int n = 4;
     int k = 9;
 
