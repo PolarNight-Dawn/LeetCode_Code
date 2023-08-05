@@ -34,7 +34,7 @@ public:
     }
 };
 
-int main() {
+int main63() {
     std::vector<std::vector<int>> obstacGrid = {{0, 0, 0}, {0, 1, 0}, {0, 0, 0}};
 
     Solution sol;
