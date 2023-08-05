@@ -39,7 +39,7 @@ public:
     }
 };
 
-int main() {
+int main61() {
     int k = 1;
     ListNode *head = new ListNode(1);
     ListNode *cur = head;
