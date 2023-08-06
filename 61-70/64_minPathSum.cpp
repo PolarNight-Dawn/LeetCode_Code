@@ -25,7 +25,7 @@ public:
     }
 };
 
-int main() {
+int main64() {
     std::vector<std::vector<int>> grid = {{1}};
 
     Solution sol;
