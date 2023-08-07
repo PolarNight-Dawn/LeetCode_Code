@@ -44,7 +44,7 @@ public:
     }
 };
 
-int main() {
+int main65() {
     std::string s = "-1.";
 
     Solution sol;
