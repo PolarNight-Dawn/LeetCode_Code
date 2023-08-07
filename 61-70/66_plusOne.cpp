@@ -31,7 +31,7 @@ public:
     }
 };
 
-int main() {
+int main66() {
     std::vector<int> digits = {4, 3, 9};
     std::vector<int> res;
 
