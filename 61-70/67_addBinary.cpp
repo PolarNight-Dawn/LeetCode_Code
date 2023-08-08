@@ -35,7 +35,7 @@ public:
     }
 };
 
-int main() {
+int main67() {
     std::string a = "1";
     std::string b = "1111";
 
