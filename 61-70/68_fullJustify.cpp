@@ -67,7 +67,7 @@ public:
 };
 
 
-int main() {
+int main68() {
     std::vector<std::string> words = {"ask","not","what","your","country","can","do","for","you",
                                       "ask","what","you","can","do","for","your","country"};
     std::vector<std::string> res;
