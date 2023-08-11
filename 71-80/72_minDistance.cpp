@@ -27,7 +27,7 @@ public:
     }
 };
 
-int main() {
+int main72() {
     std::string word1 = "horse";
     std::string word2 = "ros";
 
