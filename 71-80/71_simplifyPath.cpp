@@ -32,7 +32,7 @@ public:
     }
 };
 
-int main() {
+int main71() {
     std::string path = "/home//foo/";
 
     Solution sol;
