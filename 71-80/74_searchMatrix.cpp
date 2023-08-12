@@ -22,7 +22,7 @@ public:
     }
 };
 
-int main() {
+int main74() {
     std::vector<std::vector<int>> matrix = {{1}, {10, 11, 16, 20}, {23, 30, 34, 60}};
     int target = 1;
 
