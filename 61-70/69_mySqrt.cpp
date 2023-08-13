@@ -12,7 +12,7 @@ public:
 
         if (left == mid) return left;
 
-        if (sqrt > x) return  getSqrt(left, mid, x);
+        if (sqrt > x) return getSqrt(left, mid, x);
         else if (sqrt < x) return getSqrt(mid, right, x);
         else return mid;
     }
@@ -25,7 +25,7 @@ public:
     }
 };
 
-int main() {
+int main69() {
     int x = 1;
 
     Solution sol;
