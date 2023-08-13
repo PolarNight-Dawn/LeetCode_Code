@@ -32,7 +32,7 @@ public:
     }
 };
 
-int main() {
+int main76() {
     std::string s = "AD";
     std::string t = "ABC";
 
