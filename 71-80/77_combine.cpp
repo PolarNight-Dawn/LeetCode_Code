@@ -33,7 +33,7 @@ public:
     }
 };
 
-int main() {
+int main77() {
     int n = 1;
     int k = 1;
     std::vector<std::vector<int>> res;
