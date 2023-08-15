@@ -37,7 +37,7 @@ public:
     }
 };
 
-int main() {
+int main79() {
     std::vector<std::vector<char>> board = {{'a', 'b'},
                                             {'c', 'd'}};
     std::string word = "cdba";
