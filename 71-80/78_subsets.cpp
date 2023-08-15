@@ -26,7 +26,7 @@ public:
 };
 
 
-int main() {
+int main78() {
     std::vector<int> nums = {3,2,4,1};
     std::vector<std::vector<int>> res;
 
