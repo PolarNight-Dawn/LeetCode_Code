@@ -29,7 +29,7 @@ public:
     }
 };
 
-int main() {
+int main81() {
     std::vector<int> nums = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1};
     int target = 2;
 
