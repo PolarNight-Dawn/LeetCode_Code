@@ -1,47 +1,34 @@
 #include <iostream>
 
 //
-// Created by polarnight on 23-8-16.
+// Created by polarnight on 23-8-17.
 //
 
 // Definition for singly-linked list.
 struct ListNode {
     int val;
     ListNode *next;
-
     ListNode() : val(0), next(nullptr) {}
-
     ListNode(int x) : val(x), next(nullptr) {}
-
     ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
 
 class Solution {
 public:
-    ListNode *deleteDuplicates(ListNode *head) {
-        if (!head) {
-            return head;
+    ListNode* deleteDuplicates02(ListNode* head) {
+        ListNode *cur = head;
+        if (!head || !head->next) return head;
+
+        while (cur && cur->next) {
+            if (cur->val == cur->next->val) cur->next = cur->next->next;
+            else cur = cur->next;
         }
 
-        ListNode *dummy = new ListNode(0, head);
-
-        ListNode *cur = dummy;
-        while (cur->next && cur->next->next) {
-            if (cur->next->val == cur->next->next->val) {
-                int x = cur->next->val;
-                while (cur->next && cur->next->val == x) {
-                    cur->next = cur->next->next;
-                }
-            } else {
-                cur = cur->next;
-            }
-        }
-
-        return dummy->next;
+        return head;
     }
 };
 
-int main82() {
+int main() {
     ListNode *head = new ListNode(1);
     head->next = new ListNode(1);;
     head->next->next = new ListNode(2);;
@@ -51,7 +38,7 @@ int main82() {
      head->next->next->next->next->next->next = new ListNode(5);;*/
 
     Solution sol;
-    ListNode *res = sol.deleteDuplicates(head);
+    ListNode *res = sol.deleteDuplicates02(head);
 
     while (res != nullptr) {
         std::cout << res->val;
