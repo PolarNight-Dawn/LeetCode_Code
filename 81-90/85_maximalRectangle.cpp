@@ -1,13 +1,24 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
 
 //
-// Created by polarnight on 23-8-17.
+// Created by polarnight on 23-8-18.
 //
 
 class Solution {
 public:
-    int largestRectangleArea(std::vector<int>& heights) {
+    int maximalRectangle(std::vector<std::vector<char>> &matrix) {
+        int m = matrix.size();
+        int n = matrix[0].size();
+        std::vector<int> heights(n, 0);
+
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                heights[j] += matrix[i][j] - '0';
+            }
+        }
+
         int len = heights.size();
         std::vector<int> leftFirstmin(len, -1);
         std::vector<int> rightFirstmin(len, len);
@@ -34,11 +45,14 @@ public:
     }
 };
 
-int main84() {
-    std::vector<int> heights = {2,1,5,6,2,3};
+int main() {
+    std::vector<std::vector<char>> matrix = {{'1', '0', '1', '0', '0'},
+                                             {'1', '0', '1', '1', '1'},
+                                             {'1', '1', '1', '1', '1'},
+                                             {'1', '0', '0', '1', '0'}};
 
     Solution sol;
-    std::cout << sol.largestRectangleArea(heights);
+    std::cout << sol.maximalRectangle(matrix);
 
     return 0;
 }
