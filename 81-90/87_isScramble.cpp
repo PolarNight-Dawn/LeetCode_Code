@@ -37,7 +37,7 @@ public:
     }
 };
 
-int main() {
+int main87() {
     std::string s1 = "great";
     std::string s2 = "rgeat";
 
