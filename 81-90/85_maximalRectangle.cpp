@@ -45,7 +45,7 @@ public:
     }
 };
 
-int main() {
+int main85() {
     std::vector<std::vector<char>> matrix = {{'1', '0', '1', '0', '0'},
                                              {'1', '0', '1', '1', '1'},
                                              {'1', '1', '1', '1', '1'},

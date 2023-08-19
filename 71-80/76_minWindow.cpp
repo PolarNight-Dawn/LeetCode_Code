@@ -16,7 +16,7 @@ public:
         for (auto &vec : t) hashT[vec]++;
 
         int cnt = 0;
-        for (int i = 0, j = 0; i < s.size(); i++) {
+            for (int i = 0, j = 0; i < s.size(); i++) {
             hashS[s[i]]++;
             if (hashS[s[i]] <= hashT[s[i]]) cnt++;
 
