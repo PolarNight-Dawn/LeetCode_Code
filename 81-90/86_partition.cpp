@@ -38,7 +38,7 @@ public:
     }
 };
 
-int main() {
+int main86() {
     int x = 3;
     ListNode *head = nullptr;
     /*ListNode *head = new ListNode(1);
