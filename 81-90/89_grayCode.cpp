@@ -16,7 +16,7 @@ public:
     }
 };
 
-int main() {
+int main89() {
     int n = 2; // Replace
 
     Solution sol;// with the desired value of n
