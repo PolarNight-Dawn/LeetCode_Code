@@ -41,7 +41,7 @@ public:
     }
 };
 
-int main() {
+int main90() {
     std::vector<int> nums = {1, 2, 2};
     std::vector<std::vector<int>> res;
 
