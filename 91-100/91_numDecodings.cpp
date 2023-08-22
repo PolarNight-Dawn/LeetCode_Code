@@ -27,7 +27,7 @@ public:
     }
 };
 
-int main() {
+int main91() {
     std::string s = "11106";
 
     Solution sol;
