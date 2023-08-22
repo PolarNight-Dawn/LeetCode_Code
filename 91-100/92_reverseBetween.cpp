@@ -45,7 +45,7 @@ public:
     }
 };
 
-int main() {
+int main92() {
     int left = 1, right = 2;
     ListNode *head = new ListNode(3);
     ListNode *cur = head;
