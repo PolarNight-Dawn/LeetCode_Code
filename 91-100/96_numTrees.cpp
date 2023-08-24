@@ -23,7 +23,7 @@ public:
     }
 };
 
-int main() {
+int main96() {
     int n = 3;
 
     Solution sol;
