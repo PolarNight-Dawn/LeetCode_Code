@@ -76,7 +76,7 @@ void release_binary_tree(TreeNode *root) {
     delete root;
 }
 
-int main() {
+int main95() {
     int n = 3;
 
     Solution sol;
