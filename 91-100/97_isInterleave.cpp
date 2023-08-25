@@ -33,7 +33,7 @@ public:
     }
 };
 
-int main() {
+int main97() {
     std::string s1 = "aabcc";
     std::string s2 = "dbbca";
     std::string s3 = "aadbbbaccc";
