@@ -1,6 +1,4 @@
 #include <iostream>
-#include <vector>
-#include <algorithm>
 
 //
 // Created by polarnight on 23-8-25.
@@ -33,7 +31,7 @@ public:
     }
 };
 
-int main() {
+int main98() {
     TreeNode *root = new TreeNode(10);
     root->left = new TreeNode(5);
     root->right = new TreeNode(15);
