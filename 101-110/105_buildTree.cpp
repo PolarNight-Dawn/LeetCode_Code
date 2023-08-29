@@ -52,7 +52,7 @@ void mid_order(TreeNode *root) {
     return mid_order(root->right);
 }
 
-int main() {
+int main105() {
     std::vector<int> preorder = {3,9,20,15,7};
     std::vector<int> inorder = {9,3,15,20,7};
 
