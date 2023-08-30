@@ -44,7 +44,7 @@ public:
     }
 };
 
-int main() {
+int main106() {
     std::vector<int> inorder = {9,3,15,20,7};
     std::vector<int> postorder = {9,15,7,20,3};
 
