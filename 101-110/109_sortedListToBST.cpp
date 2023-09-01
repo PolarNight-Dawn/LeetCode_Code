@@ -17,6 +17,7 @@ struct ListNode {
     ListNode(int x, ListNode *next) : val(x), next(next) {}
 
 };
+
 // Definition of a binary tree node
 struct TreeNode {
     int val;
