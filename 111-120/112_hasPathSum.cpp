@@ -29,7 +29,7 @@ public:
     }
 };
 
-int main() {
+int main112() {
     TreeNode *root = new TreeNode(5);
     root->right = new TreeNode(4);
     root->right->right = new TreeNode(11);
