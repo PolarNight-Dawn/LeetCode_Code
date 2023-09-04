@@ -50,7 +50,7 @@ public:
     }
 };
 
-int main() {
+int main115() {
     std::string s = "rabbbit";
     std::string t = "rabbit";
 
