@@ -31,7 +31,7 @@ public:
     }
 };
 
-int main() {
+int main977() {
     std::vector<int> nums = {-4, -1, 0, 3, 10};
 
     Solution sol;
