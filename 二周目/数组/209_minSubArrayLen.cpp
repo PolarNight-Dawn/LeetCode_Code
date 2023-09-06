@@ -26,7 +26,7 @@ public:
     }
 };
 
-int main() {
+int main209() {
     std::vector<int> nums = {2,3,1,2,4,3};
     int target = 7;
 
