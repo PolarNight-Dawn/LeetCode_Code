@@ -33,7 +33,9 @@ public:
             cur = cur->next;
         }
 
-        return dummy->next;
+        head = dummy->next;
+        delete dummy;
+        return head;
     }
 };
 
