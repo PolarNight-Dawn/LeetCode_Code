@@ -1,7 +1,7 @@
 #include <iostream>
-#include <unordered_map>
 #include <vector>
-#include <algorithm>
+
+#include "generate_linked_list.h"
 
 using namespace std;
 //
@@ -9,18 +9,14 @@ using namespace std;
 //
 
 int main00() {
-/*    vector<char> vec = {'a', 'b', 'b'};
+    generate_linked_list::ListNodeUtils<int> mylist;
+    std::vector<int> nums = {1, 2, 3};
+    mylist.AddVal(nums);
 
-    vec.erase(remove(vec.begin(), vec.end(), 'b'), vec.end());
+    mylist.Print();
+    std::cout << "length: " << mylist.get_len() << std::endl;
 
-    for (auto &temp : vec) {
-        cout << temp << " ";
-    }
-    cout << endl;*/
-
-    float a = 1e20;
-    float b = 3.14159065358979;
-    printf("%f + %f - %f = %f\n", a, b, a, a + b - a);
+    generate_linked_list::ListNode<int> *head = mylist.get_head();
 
     return 0;
 }
