@@ -31,7 +31,7 @@ public:
     }
 };
 
-int main() {
+int main904() {
     std::vector<int> fruits = {3,3,3,1,2,1,1,2,3,3,4};
 
     Solution sol;
