@@ -23,7 +23,7 @@ public:
     }
 };
 
-int main() {
+int main142() {
     gll::ListNodeUtils<int> my_utils;
     std::vector<int> nums = {3, 2, 0, -4};
 
