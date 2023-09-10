@@ -77,7 +77,7 @@ private:
     ListNode *head;
 };
 
-int main() {
+int main707() {
     auto *obj = new MyLinkedList();
     int param_1 = obj->get(1);
     obj->addAtHead(1);

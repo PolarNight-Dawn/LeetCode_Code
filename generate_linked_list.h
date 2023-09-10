@@ -11,7 +11,8 @@
 //! \链接阶段:编译器找不到 generate_linked_list::ListNodeUtils<int> 类的实现
 //! 这种情况通常是因为模板类的实现需要包含在头文件中,而不是分离到独立的源文件中
 namespace generate_linked_list {
-    // 链表节点类
+    // 我们通常会将模板类内部的依赖结构提取出来单独定义
+    // 提高复用性、接口与实现分离、避免重复和依赖问题
     template<typename T>
     struct ListNode {
         T val;
@@ -23,7 +24,7 @@ namespace generate_linked_list {
         //! 单参数构造函数应该使用 \explicit 关键字进行标记，以避免不必要的隐式类型转换
         explicit ListNode(const T &val) : val(val), next(nullptr) {}
 
-        ListNode(const T &item, ListNode<T> *next) : val(val), next(next) {}
+        ListNode(const T &val, ListNode<T> *next) : val(val), next(next) {}
     };
 
     template<typename T>
@@ -43,7 +44,7 @@ namespace generate_linked_list {
         // ListNode<T> *GenerateLinkedList(std::vector<int> &nums, int len) {}
 
         void AddVal(const T &val) {
-            ListNode<T> *node = new ListNode<T>(val);
+            auto node = new ListNode<T>(val); // C++11 使用new初始化时,用auto代替明确指定类型名
             if (head == nullptr) {
                 head = node;
             } else {
@@ -57,7 +58,7 @@ namespace generate_linked_list {
 
         void AddVal(const std::vector<T>& val) {
             for (const T &vec : val) {
-                ListNode<T> *node = new ListNode<T>(vec);
+                auto node = new ListNode<T>(vec);
                 if (head == nullptr) {
                     head = node;
                 } else {
@@ -97,5 +98,7 @@ namespace generate_linked_list {
         ListNode<T> *head;
     };
 }
+
+namespace gll = generate_linked_list;
 
 #endif //LEEDCODE_GENERATE_LINKED_LIST_H
