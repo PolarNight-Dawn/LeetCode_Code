@@ -47,7 +47,7 @@ public:
     }
 };
 
-int main() {
+int main160() {
     gll::ListNodeUtils<int> my_utils_01;
     std::vector<int> nums_a = {4,1,8,4,5}; // 这里有个很有趣的现象，我没有引入头文件vector，但是我依然成功创建了nums_a
     my_utils_01.AddVal(nums_a);
