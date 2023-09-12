@@ -25,7 +25,7 @@ public:
     }
 };
 
-int main() {
+int main242() {
     std::string s = "anagram";
     std::string t = "nagaram";
 
