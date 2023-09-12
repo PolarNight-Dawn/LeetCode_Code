@@ -31,13 +31,13 @@ public:
         // 大多数情况下，结构体不需要手动释放内存，特别是当它只包含了简单的数据类型（例如int）和指向其他节点的指针
         // 因为这些数据通常是栈上分配的，它们的生命周期受限于其包含的作用域
         // 手动释放堆，自动释放栈
-        gll::ListNode<int> *new_head = dummy->next;
+        head = dummy->next;
         delete dummy;
-        return new_head;
+        return head;
     }
 };
 
-int main() {
+int main204() {
     gll::ListNodeUtils<int> my_utils;
     std::vector<int> nums = {1,2,3,4,5};
     my_utils.AddVal(nums);
