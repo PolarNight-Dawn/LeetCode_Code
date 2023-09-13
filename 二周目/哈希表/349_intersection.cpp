@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector>
-#include <algorithm>
 #include <unordered_set>
 
 //
@@ -23,7 +22,7 @@ public:
     }
 };
 
-int main() {
+int main349() {
     std::vector<int> nums1 = {1,2,2,1};
     std::vector<int> nums2 = {2,2};
 
