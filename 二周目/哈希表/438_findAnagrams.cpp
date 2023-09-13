@@ -39,7 +39,7 @@ public:
     }
 };
 
-int main() {
+int main438() {
     std::string  s = "cbaebabacd";
     std::string p = "abc";
 
