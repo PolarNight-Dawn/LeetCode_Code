@@ -25,7 +25,7 @@ public:
     }
 };
 
-int main() {
+int main383() {
     std::string ransomNote = "a";
     std::string magazine = "b";
 
