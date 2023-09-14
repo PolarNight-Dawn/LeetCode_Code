@@ -27,7 +27,7 @@ public:
     }
 };
 
-int main() {
+int main350() {
     std::vector<int> nums1 = {1,2,2,1};
     std::vector<int> nums2 = {2,2};
 
