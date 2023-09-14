@@ -16,17 +16,32 @@ public:
         return sum;
     }
 
+    //! \哈希集合
+    // bool isHappy(int n) {
+    //     std::unordered_set<int> set;
+    //     while (true) {
+    //         int sum = get_sum(n);
+    //         if (sum == 1) return true;
+    //         else {
+    //             if (set.find(sum) != set.end()) return false;
+    //             else set.insert(sum);
+    //         }
+    //         n = sum;
+    //     }
+
+    //! \快慢指针
+    // 这道题不建议使用哈希集合去记录每次的计算结果，因为这个集合可能大到无法存储
+    // 同样此题也不建议使用递归，同理，如果递归层次较深，会直接导致调用栈崩溃
+    // 不要因为本题给出的数据类型是 int 型而投机取巧
     bool isHappy(int n) {
-        std::unordered_set<int> set;
-        while (true) {
-            int sum = get_sum(n);
-            if (sum == 1) return true;
-            else {
-                if (set.find(sum) != set.end()) return false;
-                else set.insert(sum);
-            }
-            n = sum;
-        }
+        int slow = n, fast = n;
+        do {
+            slow = get_sum(slow);
+            fast = get_sum(fast);
+            fast = get_sum(fast);
+        } while (slow != fast);
+
+        return slow == 1;
     }
 };
 
