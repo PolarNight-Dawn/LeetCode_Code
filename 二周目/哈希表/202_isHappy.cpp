@@ -45,7 +45,7 @@ public:
     }
 };
 
-int main() {
+int main202() {
     int n = 19;
 
     Solution sol;
