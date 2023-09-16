@@ -32,7 +32,7 @@ public:
     }
 };
 
-int main() {
+int main454() {
     std::vector<int> nums1 = {-1,-1};
     std::vector<int> nums2 = {-1,1};
     std::vector<int> nums3 = {-1,1};
