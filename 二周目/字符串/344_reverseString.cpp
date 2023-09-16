@@ -45,7 +45,7 @@ public:
     }
 };
 
-int main() {
+int main344() {
     std::vector<char> s = {'h', 'e', 'l', 'l', 'o'};
 
     Solution sol;
