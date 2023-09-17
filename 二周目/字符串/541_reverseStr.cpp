@@ -47,7 +47,7 @@ public:
     }
 };
 
-int main() {
+int main541() {
     std::string s = "abcdefg";
     int k = 1;
 
