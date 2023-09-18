@@ -44,7 +44,7 @@ public:
     }
 };
 
-int main() {
+int mainO05() {
     std::string  s = "We are happy.";
 
     Solution sol;
