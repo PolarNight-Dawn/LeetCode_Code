@@ -25,7 +25,7 @@ public:
     }
 };
 
-int main() {
+int mainO58() {
     std::string s = "abcdefg";
     int n = 2;
 
