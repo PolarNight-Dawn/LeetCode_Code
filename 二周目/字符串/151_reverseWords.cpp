@@ -72,7 +72,7 @@ public:
     }
 };
 
-int main() {
+int main151() {
     std::string s = "  a  ";
 
     Solution sol;
