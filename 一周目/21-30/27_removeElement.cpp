@@ -14,7 +14,7 @@ public:
     //     return k;
     // }
 
-    // 二周目重刷 双指针法
+    // 二周目重刷 双指针法 相向双指针
     int removeElement(std::vector<int>& nums, int val) {
         int right = nums.size() - 1;
         for (int left = 0; left <= right; left++) {
@@ -32,7 +32,7 @@ public:
     }
 };
 
-int main() {
+int main27() {
     std::vector<int> nums = {};
     int val = 2;
 
