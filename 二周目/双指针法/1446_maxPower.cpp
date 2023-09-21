@@ -24,7 +24,6 @@ public:
 
     // 简化代码
     int maxPower(std::string s) {
-        int s_len = s.size();
         int len = 0, cnt = 0;
         for (int slow = 0, fast = 0; fast < s.size(); fast++) {
             if (s[fast] != s[slow]) {
@@ -40,7 +39,7 @@ public:
     }
 };
 
-int main() {
+int main1446() {
     std::string s = "aabbbbbccccdddddddeffffffggghhhhhiiiiijjjkkkkkllllmmmmmnnnnnoopppqrrrrsssttttuuuuvvvvwwwwwwwxxxxxyyyzzzzzzzz";
 
     Solution sol;
