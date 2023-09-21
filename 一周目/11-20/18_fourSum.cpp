@@ -6,8 +6,7 @@ using namespace std;
 //
 // Created by polarnight on 23-5-9.
 //
-/*Line 16: Char 58: runtime error: signed integer overflow: 2000000000 + 1000000000 cannot be represented in type 'int' (solution.cpp)
-SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior prog_joined.cpp:25:58*/
+
 class Solution {
 public:
     vector<vector<int>> fourSum(vector<int> &nums, int target) {
