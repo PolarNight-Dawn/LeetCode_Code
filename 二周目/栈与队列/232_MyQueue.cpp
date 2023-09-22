@@ -43,7 +43,7 @@ private:
     std::stack<int> stack_out;
 };
 
-int main() {
+int main232() {
     MyQueue queue;
     queue.push(1);
     queue.push(2);
