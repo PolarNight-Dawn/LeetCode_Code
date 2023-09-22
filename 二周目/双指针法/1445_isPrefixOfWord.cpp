@@ -31,7 +31,7 @@ public:
     }
 };
 
-int main() {
+int main1445() {
     std::string sentence = "hellohello hellohellohello";
     std::string searchWord = "ell";
 
