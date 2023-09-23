@@ -44,7 +44,7 @@ private:
     std::queue<int> queue_out;
 };
 
-int main() {
+int main225() {
     MyStack myStack;
     myStack.push(1);
     myStack.push(2);
