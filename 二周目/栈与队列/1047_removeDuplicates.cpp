@@ -41,7 +41,7 @@ public:
     }
 };
 
-int main() {
+int main1047() {
     std::string s = "abbaca";
 
     Solution sol;
