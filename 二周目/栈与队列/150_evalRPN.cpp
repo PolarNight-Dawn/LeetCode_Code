@@ -33,7 +33,7 @@ public:
     }
 };
 
-int main() {
+int main150() {
     std::vector<std::string> tokens = {"10","6","9","3","+","-11","*","/","*","17","+","5","+"};
 
     Solution sol;
