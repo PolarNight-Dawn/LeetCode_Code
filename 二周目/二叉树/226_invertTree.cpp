@@ -39,6 +39,7 @@ public:
     //     return root;
     // }
 
+    // 深入理解递归思想 递归的经典代码
     TreeNode* invertTree(TreeNode* root) {
         if (root == NULL) return root;
         std::swap(root->left, root->right);  // 中
@@ -48,7 +49,7 @@ public:
     }
 };
 
-int main() {
+int main226() {
     TreeNode *root = new TreeNode(4);
     root->left = new TreeNode(2);
     root->left->left = new TreeNode(1);
