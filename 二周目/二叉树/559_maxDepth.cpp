@@ -37,7 +37,7 @@ public:
     }
 };
 
-int main() {
+int main559() {
     Node *root = new Node(1);
     root->children.push_back(new Node(3));
     root->children.push_back(new Node(2));
