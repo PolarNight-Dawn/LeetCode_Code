@@ -32,8 +32,7 @@ public:
         tmp += std::to_string(root->val) + "->";
 
         if (!root->left && root->right) FindAllPaths(res, tmp, root->right);
-        else if (root->left && !root->right) FindAllPaths(res, tmp, root->left);
-        else if (!root->left && !root->right) FindAllPaths(res, tmp, root->left);
+        else if ((root->left && !root->right) || (!root->left && !root->right)) FindAllPaths(res, tmp, root->left);
         else {
             FindAllPaths(res, tmp, root->left);
             FindAllPaths(res, tmp, root->right);
@@ -50,7 +49,7 @@ public:
     }
 };
 
-int main() {
+int main257() {
     TreeNode *root = new TreeNode(1);
     root->left = new TreeNode(2);
     root->right = new TreeNode(3);
