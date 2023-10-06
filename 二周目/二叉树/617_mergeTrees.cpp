@@ -19,21 +19,35 @@ struct TreeNode {
 
 class Solution {
 public:
-    TreeNode* mergeTrees(TreeNode* root1, TreeNode* root2) {
-        if (!root1 && root2) root1 = new TreeNode();
-        if (root1 && !root2) root2 = new TreeNode();
-        if (!root1 && !root2) return nullptr;
+    // TreeNode* mergeTrees(TreeNode* root1, TreeNode* root2) {
+    //     if (!root1 && root2) root1 = new TreeNode();
+    //     if (root1 && !root2) root2 = new TreeNode();
+    //     if (!root1 && !root2) return nullptr;
+    //
+    //     if (!root1->left && root2->left) root1->left = new TreeNode();
+    //     if (root1->left && !root2->left) root2->left = new TreeNode();
+    //     if (!root1->right && root2->right) root1->right = new TreeNode();
+    //     if (root1->right && !root2->right) root2->right = new TreeNode();
+    //
+    //     root1->val = root1->val + root2->val;
+    //
+    //     mergeTrees(root1->left, root2->left);
+    //
+    //     mergeTrees(root1->right, root2->right);
+    //
+    //     return root1;
+    // }
 
-        if (!root1->left && root2->left) root1->left = new TreeNode();
-        if (root1->left && !root2->left) root2->left = new TreeNode();
-        if (!root1->right && root2->right) root1->right = new TreeNode();
-        if (root1->right && !root2->right) root2->right = new TreeNode();
+    // 简化代码
+    TreeNode *mergeTrees(TreeNode *root1, TreeNode *root2) {
+        if (!root1) return root2;
+        if (!root2) return root1;
 
-        root1->val = root1->val + root2->val;
+        root1->val += root2->val;
 
-        mergeTrees(root1->left, root2->left);
+        root1->left = mergeTrees(root1->left, root2->left);
 
-        mergeTrees(root1->right, root2->right);
+        root1->right = mergeTrees(root1->right, root2->right);
 
         return root1;
     }
