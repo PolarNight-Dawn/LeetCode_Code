@@ -28,8 +28,8 @@ public:
         TreeNode *node = new TreeNode(max_val);
         nums.erase(max_it);
 
-        // auto pivot = std::partition(nums.begin(), nums.end(),
-        //                             [=](int i) { return i < max_val; });
+        // auto Compare = [=](int i) -> bool { return i < max_val; };
+        // auto pivot = std::partition(nums.begin(), nums.end(),Compare);
 
         std::vector<int> left(nums.begin(), nums.begin() + max_index);
         std::vector<int> right(nums.begin() + max_index, nums.end());
