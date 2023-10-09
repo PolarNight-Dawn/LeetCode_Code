@@ -32,7 +32,7 @@ public:
     }
 };
 
-int main() {
+int main669() {
     TreeNode *root = new TreeNode(3);
     root->left = new TreeNode(1);
     root->left->right = new TreeNode(2);
