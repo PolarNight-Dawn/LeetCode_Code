@@ -30,7 +30,7 @@ public:
     }
 };
 
-int main() {
+int main216() {
     int k = 3;
     int n = 7;
 
