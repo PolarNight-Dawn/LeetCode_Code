@@ -17,7 +17,7 @@ public:
         return ans;
     }
 
-    void backTracing(std::vector<std::string> &res, std::string s,std::string str,
+    void BackTracing93(std::vector<std::string> &res, std::string s,std::string str,
                      int start, int depth) {
         if (depth == 0 && str.size() != s.size() + 3) return;
         if (depth == 0 && str.size() == s.size() + 3) {
@@ -41,7 +41,7 @@ public:
             // IP地址的组装
             if (depth == 1) str += tmp;
             else str += tmp + '.';
-            backTracing(res, s, str, i + start, depth - 1);
+            BackTracing93(res, s, str, i + start, depth - 1);
             if (depth == 1) str = str.substr(0, str.size() - i);
             else str = str.substr(0, str.size() - i - 1);
         }
@@ -51,7 +51,7 @@ public:
         std::string str;
         std::vector<std::string> res;
 
-        backTracing(res, s, str, 0, 4);
+        BackTracing93(res, s, str, 0, 4);
 
         return res;
     }

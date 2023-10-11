@@ -7,19 +7,19 @@
 
 class Solution {
 public:
-    bool backTracing(std::vector<std::vector<char>> &board, std::vector<std::vector<bool>> &raw,
+    bool BackTracing37(std::vector<std::vector<char>> &board, std::vector<std::vector<bool>> &raw,
                      std::vector<std::vector<bool>> &col, std::vector<std::vector<bool>> &area,
                      int newRaw, int newCol) {
-        if (newCol == 9) return backTracing(board, raw, col, area, newRaw + 1, 0);
+        if (newCol == 9) return BackTracing37(board, raw, col, area, newRaw + 1, 0);
         if (newRaw == 9) return true;
-        if (board[newRaw][newCol] != '.') return backTracing(board, raw, col, area, newRaw, newCol + 1);
+        if (board[newRaw][newCol] != '.') return BackTracing37(board, raw, col, area, newRaw, newCol + 1);
 
         for (int i = 0; i < 9; ++i) {
             int index = (newRaw / 3) * 3 + newCol / 3;
             if ( !raw[newRaw][i] && !col[newCol][i] && !area[index][i]) {
                 board[newRaw][newCol] = static_cast<char>(i + '1');
                 raw[newRaw][i] = col[newCol][i] = area[index][i] = true;
-                if (backTracing(board, raw, col, area, newRaw, newCol + 1)) {
+                if (BackTracing37(board, raw, col, area, newRaw, newCol + 1)) {
                     break;
                 } else {
                     board[newRaw][newCol] = '.';
@@ -44,7 +44,7 @@ public:
                 }
             }
         }
-        backTracing(board, raw, col, area, 0, 0);
+        BackTracing37(board, raw, col, area, 0, 0);
     }
 };
 

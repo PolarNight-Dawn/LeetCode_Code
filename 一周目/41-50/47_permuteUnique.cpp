@@ -8,7 +8,7 @@
 
 class Solution {
 public:
-    void backTracing(std::vector<int> &nums, std::vector<int> &temp, std::vector<int> &used,
+    void BackTracing47(std::vector<int> &nums, std::vector<int> &temp, std::vector<int> &used,
                      std::vector<std::vector<int>> &res, int len) {
         if (temp.size() == len) {
             res.push_back(temp);
@@ -20,7 +20,7 @@ public:
             if (!used[i]) {
                 used[i] = 1;
                 temp.push_back(nums[i]);
-                backTracing(nums, temp, used, res, len);
+                BackTracing47(nums, temp, used, res, len);
                 temp.pop_back();
                 used[i] = 0;
             }
@@ -34,7 +34,7 @@ public:
         std::vector<std::vector<int>> res;
 
         std::sort(nums.begin(), nums.end());
-        backTracing(nums, temp, used, res, len);
+        BackTracing47(nums, temp, used, res, len);
 
         return res;
     }

@@ -8,7 +8,7 @@
 
 class Solution {
 public:
-    void backTracing(std::vector<std::vector<int>> &res, std::vector<int> &tmp, int n, int k, int start) {
+    void BackTracing77(std::vector<std::vector<int>> &res, std::vector<int> &tmp, int n, int k, int start) {
         if (k == 0) {
             res.push_back(tmp);
             return;
@@ -17,7 +17,7 @@ public:
         for (int i = start; i <= n; i++) {
             if (std::find(tmp.begin(), tmp.end(), i) == tmp.end()) {
                 tmp.push_back(i);
-                backTracing(res, tmp, n, k - 1, i);
+                BackTracing77(res, tmp, n, k - 1, i);
                 tmp.pop_back();
             }
         }
@@ -27,7 +27,7 @@ public:
         std::vector<std::vector<int>> res;
         std::vector<int> tmp;
 
-        backTracing(res, tmp, n, k, 1);
+        BackTracing77(res, tmp, n, k, 1);
 
         return res;
     }

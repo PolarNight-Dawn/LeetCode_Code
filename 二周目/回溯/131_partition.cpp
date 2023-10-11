@@ -14,7 +14,7 @@ public:
         return true;
     }
 
-    void backTracing03(std::vector<std::vector<std::string >> &res, std::vector<std::string> &tmp,
+    void BackTracing131(std::vector<std::vector<std::string >> &res, std::vector<std::string> &tmp,
                       std::string &s, int index) {
         if (s.size() == index) {
             res.push_back(tmp);
@@ -25,7 +25,7 @@ public:
             std::string str = s.substr(index, i);
             if (!IsPalindromic(str)) continue;
             tmp.push_back(str);
-            backTracing03(res, tmp, s, index + i);
+            BackTracing131(res, tmp, s, index + i);
             tmp.pop_back();
         }
     }
@@ -34,7 +34,7 @@ public:
         std::vector<std::vector<std::string >> res;
         std::vector<std::string> tmp;
 
-        backTracing03(res, tmp, s, 0);
+        BackTracing131(res, tmp, s, 0);
 
         return res;
     }

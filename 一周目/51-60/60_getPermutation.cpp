@@ -16,7 +16,7 @@ public:
         return res;
     }
 
-    void backTracing(std::string &res, std::string &s, std::vector<int> &used, int cnt1, int n, int cnt2) {
+    void BackTracing60(std::string &res, std::string &s, std::vector<int> &used, int cnt1, int n, int cnt2) {
         if (cnt1 == n) {
             if (cnt2 == 1) res = s;
             return;
@@ -31,7 +31,7 @@ public:
             }
             s.push_back(i + '0');
             used.push_back(i);
-            backTracing(res, s, used, cnt1 + 1, n, cnt2);
+            BackTracing60(res, s, used, cnt1 + 1, n, cnt2);
             used.pop_back();
             s.pop_back();
             if (res != "") return;
@@ -43,7 +43,7 @@ public:
         std::string res;
         std::vector<int> used;
 
-        backTracing(res, s, used, 0, n, k);
+        BackTracing60(res, s, used, 0, n, k);
 
         return res;
     }
