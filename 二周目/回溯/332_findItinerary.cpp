@@ -77,7 +77,7 @@ public:
     }
 };
 
-int main() {
+int main332() {
     std::vector<std::vector<std::string>> tickets = {{"MUC", "LHR"}, {"JFK", "MUC"}, {"SFO", "SJC"}, {"LHR", "SFO"}};
 
     Solution sol;
