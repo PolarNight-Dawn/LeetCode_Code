@@ -46,7 +46,7 @@ public:
 };
 
 
-int main() {
+int main306() {
     std::string num = "199100199";
 
     Solution sol;
