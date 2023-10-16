@@ -37,7 +37,7 @@ public:
     }
 };
 
-int main() {
+int main455() {
     std::vector<int> g = {1, 3};
     std::vector<int> s = {3, 2, 1};
 
