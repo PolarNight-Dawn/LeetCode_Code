@@ -49,7 +49,7 @@ public:
     }
 };
 
-int main() {
+int main1005() {
     std::vector<int> nums = {-2, 9, -9, 8, 4};
     int k = 3;
 
