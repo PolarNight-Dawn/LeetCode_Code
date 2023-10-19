@@ -41,7 +41,7 @@ public:
     }
 };
 
-int main() {
+int main134() {
     std::vector<int> gas = {5,8,2,8};
     std::vector<int> cost = {6,5,6,6};
 
