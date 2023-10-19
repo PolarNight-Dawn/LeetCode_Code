@@ -40,7 +40,7 @@ public:
     }
 };
 
-int main() {
+int main860() {
     std::vector<int> bills = {5,5,10,20,5,5,5,5,5,5,5,5,5,10,5,5,20,5,20,5};
 
     Solution sol;
