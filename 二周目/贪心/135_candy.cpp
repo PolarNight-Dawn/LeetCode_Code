@@ -25,7 +25,7 @@ public:
     }
 };
 
-int main() {
+int main135() {
     std::vector<int> ratings = {1,3,2,2,1};
 
     Solution sol;
