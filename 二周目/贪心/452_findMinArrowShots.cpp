@@ -26,9 +26,9 @@ public:
     // }
 
     //
-    static bool Compare452(const std::vector<int> &a, const std::vector<int> &b) {
-        return a[1] < b[1];
-    }
+        static bool Compare452(const std::vector<int> &a, const std::vector<int> &b) {
+            return a[1] < b[1];
+        }
 
     int findMinArrowShots(std::vector<std::vector<int>> &points) {
         if (points.size() == 1) return 1;
@@ -48,7 +48,7 @@ public:
     }
 };
 
-int main() {
+int main452() {
     std::vector<std::vector<int>> points = {{10, 16},
                                             {2,  8},
                                             {1,  6},
