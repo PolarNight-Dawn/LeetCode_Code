@@ -25,7 +25,7 @@ public:
     }
 };
 
-int main() {
+int main406() {
     std::vector<std::vector<int>> people = {{7, 0}, {4, 4}, {7, 1}, {5, 0}, {6, 1}, {5, 2}};
 
     Solution sol;
