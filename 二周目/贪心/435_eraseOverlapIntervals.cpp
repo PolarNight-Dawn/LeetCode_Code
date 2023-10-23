@@ -28,7 +28,7 @@ public:
     }
 };
 
-int main() {
+int main435() {
     std::vector<std::vector<int>> intervals = {{1, 2}, {2, 3}, {3, 4}, {1, 3}};
 
     Solution sol;
