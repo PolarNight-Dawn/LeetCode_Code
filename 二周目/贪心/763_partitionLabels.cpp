@@ -27,7 +27,7 @@ public:
     }
 };
 
-int main() {
+int main763() {
     std::string  s = "ababcbacadefegdehijhklij";
 
     Solution sol;
