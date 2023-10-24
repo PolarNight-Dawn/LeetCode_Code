@@ -20,7 +20,7 @@ public:
     }
 };
 
-int main() {
+int main746() {
     std::vector<int> cost = {1,100,1,1,1,100,1,1,100,1};
 
     Solution sol;
