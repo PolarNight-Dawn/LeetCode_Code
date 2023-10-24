@@ -23,7 +23,8 @@ public:
     // 优化代码 时间复杂度O(n) 空间复杂度O(1)
     int fib(int n) {
         if (n <= 1) return n;
-        std::vector<int> dp(2, 0);
+        int dp[2];
+        dp[0] = 0;
         dp[1] = 1;
 
         for (int i = 2; i <= n; i++) {
@@ -35,7 +36,7 @@ public:
     }
 };
 
-int main() {
+int main509() {
     int n = 2;
 
     Solution sol;
