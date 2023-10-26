@@ -22,7 +22,7 @@ public:
     }
 };
 
-int main() {
+int main343() {
     int n = 10;
 
     Solution sol;
