@@ -32,7 +32,7 @@ public:
     }
 };
 
-int main() {
+int main474() {
     std::vector<std::string> strs = {"10", "0001", "111001", "1", "0"};
     int m = 5, n = 3;
 
