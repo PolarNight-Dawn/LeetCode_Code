@@ -23,7 +23,7 @@ public:
     }
 };
 
-int main() {
+int main518() {
     int amount = 5;
     std::vector<int> coins = {1, 2, 5};
 
