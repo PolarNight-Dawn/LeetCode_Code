@@ -43,7 +43,7 @@ public:
     }
 };
 
-int main() {
+int main279() {
     int n = 12;
 
     Solution sol;
