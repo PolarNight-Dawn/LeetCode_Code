@@ -32,7 +32,7 @@ public:
     }
 };
 
-int main() {
+int main70() {
     int n = 1;
 
     Solution sol;
