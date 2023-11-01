@@ -26,7 +26,7 @@ public:
     }
 };
 
-int main() {
+int main139() {
     std::string s = "leetcode";
     std::vector<std::string> wordDict = {"leet", "code"};
 
