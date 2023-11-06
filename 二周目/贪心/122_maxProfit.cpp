@@ -26,7 +26,7 @@ public:
     // }
 
     // 贪心 时间复杂度O(n) 空间复杂度O(1)
-    int maxProfit(std::vector<int>& prices) {
+    int maxProfit122(std::vector<int>& prices) {
         int sum = 0;
         for (int i = 1; i < prices.size(); i++) {
             sum += std::max(prices[i] - prices[i - 1], 0);
@@ -39,7 +39,7 @@ int main122() {
     std::vector<int> price = {1,2,3,4,5};
 
     Solution sol;
-    std::cout << sol.maxProfit(price);
+    std::cout << sol.maxProfit122(price);
 
     return 0;
 }
