@@ -8,7 +8,7 @@
 
 class Solution {
 public:
-    int maxProfit(int k, std::vector<int>& prices) {
+    int maxProfit188(int k, std::vector<int>& prices) {
         int len = prices.size();
         std::vector<std::vector<int>> dp(len, std::vector<int>(2 * k + 1, 0));
 
@@ -21,12 +21,12 @@ public:
     }
 };
 
-int main() {
+int main188() {
     std::vector<int> prices = {2,4,1};
     int k = 2;
 
     Solution sol;
-    std::cout << sol.maxProfit(k, prices);
+    std::cout << sol.maxProfit188(k, prices);
 
     return 0;
 }
