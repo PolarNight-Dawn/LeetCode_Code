@@ -21,7 +21,7 @@ public:
     }
 };
 
-int main() {
+int main300() {
     std::vector<int> nums = {10,9,2,5,3,7,101,18};
 
     Solution sol;
