@@ -21,7 +21,7 @@ public:
     }
 };
 
-int main() {
+int main714() {
     int fee = 2;
     std::vector<int> prices = {1, 3, 2, 8, 4, 9};
 
