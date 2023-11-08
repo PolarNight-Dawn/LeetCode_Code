@@ -22,7 +22,7 @@ public:
     }
 };
 
-int main() {
+int main309() {
     std::vector<int> prices = {1,2,3,0,2};
 
     Solution sol;
