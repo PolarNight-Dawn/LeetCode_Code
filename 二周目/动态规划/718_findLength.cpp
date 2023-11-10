@@ -24,7 +24,7 @@ public:
     }
 };
 
-int main() {
+int main718() {
     std::vector<int> nums1 = {1, 2, 3, 2, 1};
     std::vector<int> nums2 = {3, 2, 1, 4, 7};
 
