@@ -23,7 +23,7 @@ public:
     }
 };
 
-int main() {
+int main1143() {
     std::string text1 = "abcde";
     std::string text2 = "ace";
 
