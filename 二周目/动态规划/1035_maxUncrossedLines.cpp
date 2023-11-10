@@ -23,7 +23,7 @@ public:
     }
 };
 
-int main() {
+int main1035() {
     std::vector<int> nums1 = {1,4,2};
     std::vector<int> nums2 = {1,2,4};
 
