@@ -26,7 +26,7 @@ public:
     }
 };
 
-int main() {
+int main583() {
     std::string word1 = "leetcode";
     std::string word2 = "etco";
 
