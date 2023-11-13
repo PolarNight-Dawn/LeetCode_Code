@@ -25,7 +25,7 @@ public:
     }
 };
 
-int main() {
+int main647() {
     std::string s = "abc";
 
     Solution sol;
