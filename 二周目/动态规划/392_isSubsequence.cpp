@@ -26,7 +26,7 @@ public:
     }
 };
 
-int main() {
+int main392() {
     std::string s = "b";
     std::string t = "abc";
 
