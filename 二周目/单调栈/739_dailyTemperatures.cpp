@@ -22,7 +22,7 @@ public:
     }
 };
 
-int main() {
+int main739() {
     std::vector<int> temperatures = {73, 74, 75, 71, 69, 72, 76, 73};
 
     Solution sol;
