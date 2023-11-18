@@ -31,7 +31,7 @@ public:
     }
 };
 
-int main() {
+int main797() {
     std::vector<std::vector<int>> graph = {{1, 2},
                                            {3},
                                            {3},
