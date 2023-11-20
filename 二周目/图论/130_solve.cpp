@@ -45,7 +45,7 @@ public:
     }
 };
 
-int main() {
+int main130() {
     std::vector<std::vector<char>> board = {{'X', 'X', 'X', 'X'},
                                             {'X', 'O', 'O', 'X'},
                                             {'X', 'X', 'O', 'X'},
