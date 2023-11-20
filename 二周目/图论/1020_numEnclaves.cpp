@@ -46,7 +46,7 @@ public:
     }
 };
 
-int main() {
+int main1020() {
     std::vector<std::vector<int>> grid = {{0, 0, 0, 0}, {1, 0, 1, 0}, {0, 1, 1, 0}, {0, 0, 0, 0}};
 
     Solution sol;
