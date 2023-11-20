@@ -37,7 +37,7 @@ public:
     }
 };
 
-int main() {
+int main200() {
     std::vector<std::vector<char>> grid = {{'1', '1', '1', '1', '0'},
                                           {'1', '1', '0', '1', '0'},
                                           {'1', '1', '0', '0', '0'},
