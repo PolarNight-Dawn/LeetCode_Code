@@ -48,7 +48,7 @@ public:
     }
 };
 
-int main() {
+int main417() {
     std::vector<std::vector<int>> heights = {{1, 2, 2, 3, 5},
                                              {3, 2, 3, 4, 4},
                                              {2, 4, 5, 3, 1},
