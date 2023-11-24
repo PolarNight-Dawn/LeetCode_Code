@@ -35,7 +35,7 @@ public:
     }
 };
 
-int main() {
+int main841() {
     std::vector<std::vector<int>> rooms = {{1, 3}, {3, 0, 1}, {2}, {}};
 
     Solution sol;
