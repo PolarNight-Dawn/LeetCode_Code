@@ -40,7 +40,7 @@ public:
     }
 };
 
-int main() {
+int main1971() {
     std::vector<std::vector<int>> edges = {{0, 1}, {1, 2}, {2, 0}};
     int source = 0, destination = 2, n = 3;
 
