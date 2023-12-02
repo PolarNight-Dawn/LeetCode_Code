@@ -47,7 +47,7 @@ public:
     }
 };
 
-int main() {
+int main684() {
     vector<vector<int>> edges = {{1, 2},
                                  {1, 3},
                                  {2, 3}};
