@@ -27,7 +27,7 @@ public:
     }
 };
 
-int main() {
+int main1094() {
     vector<vector<int>> trips = {{2, 1, 5}, {3, 5, 7}};
     int capacity = 3;
 
