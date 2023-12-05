@@ -2,6 +2,8 @@
 #include <vector>
 #include <algorithm>
 
+using namespace std;
+
 //
 // Created by polarnight on 23-12-4, 下午4:22.
 //
@@ -36,7 +38,7 @@ public:
     }
 };
 
-int main() {
+int main1038() {
     TreeNode *root = new TreeNode(4);
     root->left = new TreeNode(1);
     root->left->left = new TreeNode(0);
