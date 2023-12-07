@@ -33,7 +33,7 @@ public:
     }
 };
 
-int main() {
+int main2477() {
     vector<vector<int>> roads = {{0, 1},
                                  {0, 2},
                                  {0, 3}};
