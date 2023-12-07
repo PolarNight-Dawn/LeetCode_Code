@@ -31,7 +31,7 @@ public:
     }
 };
 
-int main() {
+int main1466() {
     int n = 6;
     vector<vector<int>> connections = {{0, 1},
                                        {1, 3},

@@ -12,38 +12,31 @@ using namespace std;
 class Solution {
 public:
     int firstCompleteIndex(vector<int>& arr, vector<vector<int>>& mat) {
-        vector<int> row(mat[0].size()), col(mat.size());
-        unordered_map<int, int> hash_row, hash_col;
+        int raw_nums = mat.size();
+        int col_nums = mat[0].size();
 
-        for (int i = 0; i < mat.size(); i++) {
-            for (int j = 0; j < mat[0].size(); j++) {
-                hash_row[mat[i][j]] = i;
-                hash_col[mat[i][j]] = j;
+        vector<int> raw(raw_nums, col_nums);
+        vector<int> col(col_nums, raw_nums);
+        vector<pair<int, int>> position(raw_nums * col_nums);
+
+        for (int i = 0; i < raw_nums; i++) {
+            for (int j = 0; j < col_nums; j++) {
+                position[mat[i][j] - 1].first = i;
+                position[mat[i][j] - 1].second = j;
             }
         }
 
-        int arr_size = arr.size();
-        for (int i = 0; i < arr_size; i++) {
-            row[hash_row[arr[i]]]++;
-            if (row[hash_row[arr[i]]] == mat.size()) {
-                int min_num = INT32_MAX;
-                for (int j = 0; j < mat[0].size(); j++) {
-                    min_num = min(min_num, mat[hash_row[arr[i]]][j]);
-                }
-            }
-            col[hash_col[arr[i]]]++;
-            if (col[hash_col[arr[i]]] == mat[0].size()) {
-                int min_num = INT32_MAX;
-                for (int j = 0; j < mat.size(); j++) {
-                    min_num = min(min_num, mat[j][hash_col[arr[i]]]);
-                }
-            }
+        for (int i = 0; i < arr.size(); i++) {
+            raw[position[arr[i] - 1].first]--;
+            if (raw[position[arr[i] - 1].first] == 0) return i;
+            col[position[arr[i] - 1].second]--;
+            if (col[position[arr[i] - 1].second] == 0) return i;
         }
-        return -1;
+        return 0;
     }
 };
 
-int main2661() {
+int main() {
     vector<int> arr = {1, 3, 4, 2};
     vector<vector<int>> mat = {{1, 4}, {2, 3}};
 
