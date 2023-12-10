@@ -58,7 +58,7 @@ public:
     }
 };
 
-int main() {
+int main2008() {
     int n = 20;
     vector<vector<int>> rides = {{1,  6,  1},
                                  {3,  10, 2},
