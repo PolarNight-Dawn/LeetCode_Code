@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include <cmath>
 
 using namespace std;
 
@@ -44,7 +43,7 @@ public:
     }
 };
 
-int main() {
+int main2048() {
     int n = 748601;
 
     Solution sol;
