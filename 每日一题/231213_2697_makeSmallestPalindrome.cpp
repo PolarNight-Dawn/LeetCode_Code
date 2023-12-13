@@ -23,7 +23,7 @@ public:
     }
 };
 
-int main() {
+int main2312132697() {
     string s = "egcfe";
 
     Solution sol;

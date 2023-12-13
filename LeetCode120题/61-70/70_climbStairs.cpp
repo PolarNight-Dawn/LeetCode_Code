@@ -19,7 +19,7 @@ public:
     //     return  dp[n - 1];
     // }
 
-    // 二周目 动态规划 完全背包问题
+    // 代码随想录 动态规划 完全背包问题
     int climbStairs(int n) {
         std::vector<int> dp(n + 1, 0);
 
