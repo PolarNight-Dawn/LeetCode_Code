@@ -4,6 +4,7 @@
 #include <stack>
 #include <unordered_map>
 
+using namespace std;
 //
 // Created by polarnight on 23-11-15, 下午2:01.
 //
@@ -34,25 +35,46 @@ public:
 
     //! \优化代码 单调栈 + 哈希
     //! \时间复杂度 O(N + M)
+    // std::vector<int> nextGreaterElement(std::vector<int> &nums1, std::vector<int> &nums2) {
+    //     std::stack<int> sta;
+    //     std::unordered_map<int, int> vec;
+    //     std::vector<int> res(nums1.size(), -1);
+    //
+    //     for (int i = 0; i < nums1.size(); i++) {
+    //         vec.insert(std::pair<int, int>(nums1[i], i));
+    //     }
+    //
+    //     for (int i = 0; i < nums2.size(); i++) {
+    //         while (!sta.empty() && nums2[i] > nums2[sta.top()]) {
+    //             if (vec.find(nums2[sta.top()]) != vec.end()) {
+    //                 res[vec[nums2[sta.top()]]] = nums2[i];
+    //             }
+    //             sta.pop();
+    //         }
+    //         sta.push(i);
+    //     }
+    //     return res;
+    // }
+
+    //! \随想录二刷
     std::vector<int> nextGreaterElement(std::vector<int> &nums1, std::vector<int> &nums2) {
-        std::stack<int> sta;
-        std::unordered_map<int, int> vec;
-        std::vector<int> res(nums1.size(), -1);
+        int nums1_len = nums1.size();
+        int nums2_len = nums2.size();
+        unordered_map<int, int> map;
+        vector<int> answers(nums1_len, -1);
+        stack<int> sta;
 
-        for (int i = 0; i < nums1.size(); i++) {
-            vec.insert(std::pair<int, int>(nums1[i], i));
-        }
+        for (int i = 0; i < nums1_len; i++)
+            map.emplace(nums1[i], i);
 
-        for (int i = 0; i < nums2.size(); i++) {
-            while (!sta.empty() && nums2[i] > nums2[sta.top()]) {
-                if (vec.find(nums2[sta.top()]) != vec.end()) {
-                    res[vec[nums2[sta.top()]]] = nums2[i];
-                }
+        for (int i = 0; i < nums2_len; i++) {
+            while (!sta.empty() && nums2[sta.top()] < nums2[i]) {
+                if (map.find(nums2[sta.top()]) != map.end()) answers[map[nums2[sta.top()]]] = nums2[i];
                 sta.pop();
             }
             sta.push(i);
         }
-        return res;
+        return answers;
     }
 };
 
