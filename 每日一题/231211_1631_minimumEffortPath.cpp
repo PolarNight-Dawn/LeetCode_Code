@@ -64,7 +64,7 @@ public:
     }
 };
 
-int main() {
+int main2312111631() {
     vector<vector<int>> heights = {{1, 2, 2},
                                    {3, 8, 2},
                                    {5, 3, 5}};
