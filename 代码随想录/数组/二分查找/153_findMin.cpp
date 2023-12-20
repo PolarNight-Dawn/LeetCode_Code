@@ -21,7 +21,7 @@ public:
     }
 };
 
-int main() {
+int main152() {
     vector<int> nums = {3,1,2};
 
     Solution sol;
