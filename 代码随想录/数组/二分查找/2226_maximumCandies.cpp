@@ -27,7 +27,7 @@ public:
     }
 };
 
-int main() {
+int main2226() {
     vector<int> candies = {5,8,6};
     int k = 3;
 
