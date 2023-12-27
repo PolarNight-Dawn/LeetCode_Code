@@ -29,7 +29,7 @@ public:
     }
 };
 
-int main() {
+int main231225_1276() {
     int tomatoSlices = 0;
     int cheeseSlices = 0;
 
