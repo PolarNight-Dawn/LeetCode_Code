@@ -35,7 +35,7 @@ public:
     }
 };
 
-int main() {
+int main1011() {
     vector<int> weights = {1,2,3,1,1};
     int days = 4;
 
