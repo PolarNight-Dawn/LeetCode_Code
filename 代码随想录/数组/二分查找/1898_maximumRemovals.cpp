@@ -38,7 +38,7 @@ public:
     }
 };
 
-int main() {
+int main1898() {
     string s = "qobftgcueho";
     string p = "obue";
     vector<int> removable = {5, 3, 0, 6, 4, 9, 10, 7, 2, 8};
