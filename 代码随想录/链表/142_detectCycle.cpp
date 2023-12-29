@@ -27,7 +27,7 @@ public:
     // 快慢指针的解法涉及数学分析、计算，具体解析可以看下面这一篇题解
     // 作者：代码随想录
     // 链接：https://leetcode.cn/problems/linked-list-cycle-ii/
-    // 来源：力扣（LeetCode120题）
+    // 来源：力扣（LeetCode120）
     // 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
     gll::ListNode<int> *detectCycle(gll::ListNode<int> *head) {
         gll::ListNode<int> *fast = head;
