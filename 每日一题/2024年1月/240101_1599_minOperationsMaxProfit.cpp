@@ -15,7 +15,7 @@ public:
     }
 };
 
-int main() {
+int main2401011599() {
     vector<int> customers = {0,0,0,0,0,50};
     int boardingCost = 100, runningCost = 1;
 
