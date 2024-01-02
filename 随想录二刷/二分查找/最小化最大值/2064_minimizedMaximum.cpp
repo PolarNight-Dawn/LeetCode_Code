@@ -28,7 +28,7 @@ public:
     }
 };
 
-int main() {
+int main2064() {
     int n = 6;
     vector<int> quantities = {11,6};
 
