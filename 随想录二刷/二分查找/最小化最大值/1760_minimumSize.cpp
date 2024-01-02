@@ -31,7 +31,7 @@ public:
     }
 };
 
-int main() {
+int main1760() {
     vector<int> nums = {9};
     int maxOperations = 2;
 
