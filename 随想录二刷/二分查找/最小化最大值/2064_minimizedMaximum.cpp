@@ -16,7 +16,7 @@ public:
             int count = 0;
             for (auto &quantity : quantities)
                 count += (quantity - 1) / mid + 1;
-            return count >= n;
+            return count > n;
         };
 
         while (left <= right) {
@@ -24,7 +24,7 @@ public:
             if (Check(mid)) left = mid + 1;
             else right = mid - 1;
         }
-        return right;
+        return left;
     }
 };
 
