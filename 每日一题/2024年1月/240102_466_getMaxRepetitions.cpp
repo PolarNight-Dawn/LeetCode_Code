@@ -14,7 +14,7 @@ public:
     }
 };
 
-int main() {
+int main240102466() {
     string s1 = "lovelive", s2 = "lovelive";
     int n1 = 1000, n2 = 999;
 
