@@ -50,7 +50,7 @@ public:
     }
 };
 
-int main() {
+int main2401032487() {
     ListNode *head = new ListNode(1);
     head->next = new ListNode(1);
     head->next->next = new ListNode(1);
