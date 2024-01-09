@@ -35,7 +35,7 @@ public:
     }
 };
 
-int main() {
+int main2560() {
     vector<int> nums = {1,4,5};
     int k = 1;
 
