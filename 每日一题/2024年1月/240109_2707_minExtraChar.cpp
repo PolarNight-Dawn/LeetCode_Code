@@ -29,7 +29,7 @@ public:
     }
 };
 
-int main() {
+int main2401092707() {
     string s = "leetscode";
     vector<string> dictionary = {"leet","code","leetcode"};
 
