@@ -43,6 +43,6 @@ private:
     queue<int> que_in;
 };
 
-int main() {
+int main2400303225() {
 
 }
