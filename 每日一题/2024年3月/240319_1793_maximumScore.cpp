@@ -15,7 +15,17 @@ public:
         int left = k, right = k;
         int min_val = nums[k], max_sum = nums[k];
 
-        int i = k - 1, j = k + 1;
+        //! \优化代码
+        for (int i = 0; i < n - 1; i++) {
+            if (left == 0 || right < n && nums[left - 1] <= nums[right + 1])
+                min_val = min(min_val, nums[++right]);
+            else
+                min_val = min(min_val, nums[--left]);
+            max_sum = max(max_sum, min_val * (right - left + 1));
+        }
+
+        //! \被优化代码
+        /*int i = k - 1, j = k + 1;
         while (i >= 0 && j < n) {
             if (nums[j] >= min_val) {
                 right++, j++;
@@ -50,7 +60,7 @@ public:
                 min_val = nums[j];
             right++, j++;
             max_sum = max(max_sum, min_val * (right - left + 1));
-        }
+        }*/
 
         return max_sum;
     }
