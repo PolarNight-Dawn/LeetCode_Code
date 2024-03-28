@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "/home/polarnight/Code/CLionProject/leedcode/generate_linked_list.h"
+#include "/home/polarnight/Code/CLionProject/LeetCode/generate_linked_list.h"
 
 //
 // Created by polarnight on 23-9-10, 下午9:41.

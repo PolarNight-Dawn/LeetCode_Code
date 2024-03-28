@@ -36,7 +36,7 @@ private:
     unordered_map<int, int> freq_cnt;
 };
 
-int main() {
+int main240321_2671() {
     auto *obj = new FrequencyTracker();
 
     obj->add(2);
