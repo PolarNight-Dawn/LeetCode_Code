@@ -44,7 +44,7 @@ public:
     }
 };
 
-int main() {
+int main240328_1997() {
     vector<int> nextVisit = {0,0};
 
     Solution sol;
