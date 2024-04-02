@@ -5,12 +5,15 @@
 #include <iostream>
 #include <algorithm>
 #include <vector>
+#include <deque>
 
 using namespace std;
 
 class Solution {
 public:
-    string finalString(string s) {
+    /*! \直接模拟
+     * \时间复杂度 O(n^2) */
+    /*string finalString(string s) {
         auto it = find(s.begin(), s.end(), 'i');
         while (it != s.end()) {
             int cnt = distance(s.begin(), it);
@@ -24,6 +27,19 @@ public:
             it = find(s.begin(), s.end(), 'i');
         }
         return s;
+    }*/
+
+    /*! \双端队列
+     * \时间复杂度 O(n)*/
+    string finalString(string s) {
+        deque<char> deq;
+        bool tail = true;
+        for (auto &c: s) {
+            if (c == 'i') tail = !tail;
+            else if (tail) deq.push_back(c);
+            else deq.push_front(c);
+        }
+        return tail ? string(deq.begin(), deq.end()) : string(deq.rbegin(), deq.rend());
     }
 };
 
