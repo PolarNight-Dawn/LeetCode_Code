@@ -2,7 +2,7 @@
 #include <vector>
 #include <unordered_set>
 
-#include "/home/polarnight/Code/CLionProject/LeetCode/generate_linked_list.h"
+#include "../../include/generate_linked_list.h"
 
 //
 // Created by polarnight on 23-9-10, 下午3:56.
