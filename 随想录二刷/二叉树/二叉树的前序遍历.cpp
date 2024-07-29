@@ -30,7 +30,7 @@ class Solution {
   }
 
   /* 迭代方法 */
-  vector<int> preorderTraversalIt(std::shared_ptr<gtn::TreeNodeShared> root) {
+  vector<int> preorderTraversalIt(const std::shared_ptr<gtn::TreeNodeShared> &root) {
 	stack<std::shared_ptr<gtn::TreeNodeShared>> sta;
 	vector<int> res;
 
@@ -66,7 +66,7 @@ class Solution {
   }
 };
 
-int main() {
+int main01() {
 
   std::unique_ptr<gtn::TreeNodeUnique> root_unique = std::make_unique<gtn::TreeNodeUnique>(1);
   root_unique->right = std::make_unique<gtn::TreeNodeUnique>(2);
@@ -78,7 +78,7 @@ int main() {
 
   Solution sol;
   auto res_unique = sol.preorderTraversal(std::move(root_unique));
-  auto res_shared = sol.preorderTraversalIt(std::move(root_shared));
+  auto res_shared = sol.preorderTraversalIt(root_shared);
 
   for (auto vec : res_unique)
 	cout << vec << " ";
