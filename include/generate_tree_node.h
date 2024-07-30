@@ -5,6 +5,8 @@
 #ifndef LEEDCODE_INCLUDE_GENERATE_TREE_NODE_H_
 #define LEEDCODE_INCLUDE_GENERATE_TREE_NODE_H_
 
+#include <memory>
+
 namespace generate_tree_node {
 /* 原生指针版本，需要手动释放，容易泄露内存 */
 struct TreeNodeRaw {

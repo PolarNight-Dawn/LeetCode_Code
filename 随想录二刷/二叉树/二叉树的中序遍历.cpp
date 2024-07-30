@@ -33,7 +33,7 @@ class Solution {
   }
 };
 
-int main() {
+int main02() {
   std::shared_ptr<gtn::TreeNodeShared> root = std::make_unique<gtn::TreeNodeShared>(1);
   root->right = std::make_shared<gtn::TreeNodeShared>(2);
   root->right->left = std::make_shared<gtn::TreeNodeShared>(3);
