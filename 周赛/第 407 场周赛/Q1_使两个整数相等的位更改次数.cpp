@@ -24,6 +24,6 @@ class Solution {
   }
 };
 
-int main100372() {
+int main40701() {
 
 }

@@ -52,6 +52,6 @@ class Solution {
   }
 };
 
-int main() {
+int main40802() {
 
 }

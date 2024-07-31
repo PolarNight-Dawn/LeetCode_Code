@@ -20,6 +20,6 @@ class Solution {
   }
 };
 
-int mainQ1() {
+int main40801() {
 
 }
